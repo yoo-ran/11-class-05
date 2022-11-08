@@ -1,0 +1,4 @@
+screenshots/
+
+# root폴더안에 있어야함/git이랑 같은 위치에 있어야함
+# gitignore에 있는 건 추적이 불가능함
