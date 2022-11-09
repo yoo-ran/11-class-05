@@ -382,4 +382,12 @@ h3 {
         width: 90%;
     }
 
+    footer form {
+        justify-content: right;
+    }
+
+    footer > article {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
