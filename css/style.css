@@ -154,5 +154,75 @@ h3 {
         font-weight: 500;
     }
 
+    .about {
+        padding: 5%;
+        row-gap: 5vh;
+    }
 
+    .about > article {
+        display: flex;
+        column-gap: 1vh;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about aside {
+        width: 30%;
+        display: flex;
+        border: 4px solid var(--defaultGray);
+    }
+
+    .about section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    .about section article {
+        row-gap: 3vh;
+    }
+
+    .about p {
+        line-height: 1.5;
+        color: var(--lightBlack2);
+        font-size: 12px;
+    }
+
+    .about a {
+        width: 25%;
+        background-color: var(--defaultColor);
+        color: white;
+        padding: 1%;
+    }
+    
+    .about blockquote {
+        border-left:10px solid var(--defaultColor);
+        padding-left: 5vh;
+        line-height: 1.5;
+        font-style: italic;
+        font-size: 20px;
+        color: var(--lightBlack2);
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+        width: 80%;
+    }
+
+    .about q {
+        font-family: serif;
+    }
+
+    .about cite {
+        color: var(--defaultColor);
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    footer {
+        background-color: var(--lightBlack);
+    }
+
+    footer > article {
+        background-color: var(--darkerBlack);
+    }
 }
