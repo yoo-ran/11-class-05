@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {margin: 0; padding: 0; font-family: 'Libre Franklin', sans-serif;}
+a {text-decoration: none;}
+
+:root {
+    --defaultColor: #55A2A6;
+    --defaultBlack: #151515;
+    --lightBlack: #333;
+    --darkerBlack: #111;
+    --lightBlack2: #444;
+    --defaultGray: #ccc;
+    --darkerGray: #b2b2b2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, 
+main, 
+main > section,
+footer,
+.features a,
+.features > blockquote,
+.about > section > article
+ {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h3 {
+    text-transform: capitalize;
+}
+
+h1 {
+    color: var(--darkerBlack);
+}
+
+h2 {
+    text-transform: uppercase;
+    color: white;
+}
+
+h3 {
+    color: var(--darkerBlack);
+}
+
+
+@media (min-width: 250px) {
+    header {
+        background-image: url(/images/banner-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+    }
+
+    header > article {
+        background-color: rgba(50, 50, 50, 0.5);
+        width: 100%;
+        height: 100%;
+    }
+     
+    .features {
+        padding: 2vh 0;
+    }
+
+    .features > blockquote {
+        background-color: var(--defaultColor);
+        text-align: center;
+        padding: 2vh 20%;
+        color: white;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .features cite {
+        font-style: normal;
+    }
+
+    .features > article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10vh;
+        text-align: center;
+        padding: 5vh 0;
+    }
+
+    .features a {
+        align-items: center;
+        row-gap: 2vh;
+        color: var(--darkerBlack);
+    }
+
+    .features i{
+        font-size: 60px;
+    }
+
+    .features h3 {
+        width: 30%;
+    }
+
+    .features p {
+        color: var(--lightBlack);
+        font-weight: 500;
+    }
+
+
+}
