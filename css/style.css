@@ -168,9 +168,14 @@ h3 {
     }
 
     .about aside {
-        width: 30%;
+        width: 100%;
         display: flex;
         border: 4px solid var(--defaultGray);
+    }
+
+    .about > article h3 {
+        width: 80%;
+        text-align: center;
     }
 
     .about section {
@@ -310,4 +315,71 @@ h3 {
         color: var(--darkerGray);
         font-weight: 400;
     }
+}
+
+@media (min-width: 600px) {
+    nav > aside {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 1%;
+    }
+
+    nav > ul {
+        display: flex;
+        column-gap: 3vh;
+        padding-right: 2%;
+    }
+
+    nav > ul li {
+        list-style: none;
+    }
+
+    nav > ul a {
+        color: var(--defaultBlack);
+    }
+    nav > ul a:hover {
+        color: var(--defaultColor);
+    }
+
+    header {
+        height: 60vh;
+    }
+
+    .features > blockquote {
+        flex-direction: row;
+        padding: 2% 10%;
+    }
+
+    .features > article {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .features h3 {
+        width: 70%;
+    }
+
+    .about > article h3 {
+        width: 40%;
+    }
+
+    .about > section {
+        flex-direction: row;
+        column-gap: 5vh;
+    }
+
+    .about a {
+        width: 40%;
+        text-align: center;
+    }
+
+    .about blockquote {
+        width: 90%;
+    }
+
 }
