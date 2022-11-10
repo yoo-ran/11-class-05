@@ -199,6 +199,7 @@ h3 {
         background-color: var(--defaultColor);
         color: white;
         padding: 1%;
+        text-align: center;
     }
     
     .about blockquote {
@@ -341,6 +342,7 @@ h3 {
 
     nav > ul a {
         color: var(--defaultBlack);
+        transition: .3s;
     }
     nav > ul a:hover {
         color: var(--defaultColor);
@@ -352,6 +354,7 @@ h3 {
 
     .features > blockquote {
         flex-direction: row;
+        justify-content: center;
         padding: 2% 10%;
     }
 
@@ -364,9 +367,6 @@ h3 {
         width: 70%;
     }
 
-    .about > article h3 {
-        width: 40%;
-    }
 
     .about > section {
         flex-direction: row;
@@ -376,6 +376,14 @@ h3 {
     .about a {
         width: 40%;
         text-align: center;
+        transition: .3s;
+        border: 2px solid transparent;
+    }
+
+    .about a:hover {
+        background-color: transparent;
+        border: 2px solid var(--defaultColor);
+        color: var(--defaultColor);
     }
 
     .about blockquote {
@@ -389,5 +397,11 @@ h3 {
     footer > article {
         flex-direction: row;
         justify-content: space-between;
+    }
+}
+
+@media (min-width:1000px) {
+    header {
+        height: 70vh;
     }
 }
