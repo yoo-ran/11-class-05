@@ -441,5 +441,22 @@ h3 {
     .about blockquote{
         box-sizing: border-box;
     }
+
+    footer > section,
+    footer > article {border: 1px solid red;
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer > section {
+        column-gap: 10%;
+    }
+    footer > article {
+        column-gap: 40%;
+    }
+
+    footer form {
+        justify-content: left;
+    }
+
     
 }
