@@ -401,6 +401,12 @@ h3 {
 }
 
 @media (min-width:1000px) {
+
+    nav{
+        justify-content: center;
+        column-gap: 30%;
+        align-items: flex-end;
+    }
     header {
         height: 70vh;
     }
