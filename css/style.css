@@ -410,4 +410,36 @@ h3 {
     header {
         height: 70vh;
     }
+
+    .features > article {
+        padding: 0;
+    }
+
+    .features a {
+        width: 15%;
+        padding: 5vh 0;
+    }
+
+    .features a:hover {
+    background-color: var(--defaultBlack);
+    }
+    .features a:hover h3,
+    .features a:hover i,
+    .features a:hover p {
+        color: var(--darkerGray);
+    }
+
+    .about {
+        align-items: center;
+    }
+
+    .about > article,
+    .about > section{
+        width: 80%;
+    }
+
+    .about blockquote{
+        box-sizing: border-box;
+    }
+    
 }
